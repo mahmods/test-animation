@@ -1,0 +1,44 @@
+html, body {
+    background-color: #433249;
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    margin: 50px;
+}
+
+.top-cube {
+    position: absolute;
+    top: 30px;
+    animation: top-cube-anime 2s 1.67s ease-in-out alternate infinite;
+}
+
+.top-chip {
+    width: 70%;
+    left: 15%;
+    position: absolute;
+    top: 30px;
+    animation: top-cube-anime 2s 1.33s cubic-bezier(0.175, 0.885, 0.32, 1.275) alternate infinite;
+}
+
+.bottom-cube {
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes top-cube-anime {
+    from { top: 30px; }
+    to { top: -50px; }
+}
